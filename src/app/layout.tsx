@@ -5,9 +5,9 @@ import { Inter } from 'next/font/google';
 export const metadata = {
   title: 'Breadit',
   description: 'A Reddit clone built with Next.js and TypeScript.',
-}
+};
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({subsets: ['latin']});
 
 export default function RootLayout({
   children,
@@ -16,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={cn('bg-white text-slate-900 antialiased light', inter.className)}>
-      <body>{children}</body>
+      <body className='min-h-screen pt-12 bg-slate-50 antialiased'>
+        <Navbar />
+        {children}
+      </body>
     </html>
-  )
+  );
 }
