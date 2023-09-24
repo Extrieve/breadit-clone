@@ -1,6 +1,6 @@
 {
   "semi": true,
-  "trailingComma": "all",
+  "trailingComma": "none",
   "singleQuote": true,
   "printWidth": 80,
   "tabWidth": 2,
@@ -9,5 +9,18 @@
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
   "endOfLine": "lf",
-  "trimTrailingWhitespace": true
+  "trimTrailingWhitespace": true,
+  "proseWrap": "preserve",
+  "importOrder": [
+    "^@core/(.*)$",
+    "^@server/(.*)$",
+    "^@client/(.*)$",
+    "^@ui/(.*)$",
+    "^[./]",
+    "^@/(.*)$",
+    "^[a-z]",
+    "^@\\w"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
 }
