@@ -17,6 +17,7 @@
     "no-console": ["warn"],
     "no-unused-vars": ["warn"],
     "semi": ["warn", "always"],
+    "react/jsx-one-expression-per-line": ["error"],
     "@typescript-eslint/no-unused-vars": ["warn"],
     "prettier/prettier": [
       "error",
