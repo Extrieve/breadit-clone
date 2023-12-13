@@ -1,3 +1,6 @@
+// server component
+
+import Link from 'next/link'
 import { FC } from 'react'
 import { Icons } from '../Icons'
 
@@ -11,6 +14,13 @@ const SignIn: FC<SignInProps> = props => {
         <h1 className='text-2xl font-semibold tracking-tight'>Welcome Back</h1>
         <p className='text-sm max-w-xs mx-auto'>
           By continuing, you agree to our User Agreement and Privacy Policy.
+        </p>
+
+        {/* Sign in form placeholder */}
+        
+        <p className='px-8 text-center text-sm text-zinc-700'>
+          New to Breadit?{' '}
+          <Link href='/sign-up' className='hover:text-zinc-800 text-sm underline underline-offset-4'>Sign Up </Link>
         </p>
       </div>
     </div>
